@@ -6,14 +6,14 @@
 # Current value: 10
 # How can you do that?
 
-for i in range (1,11):
-    print ("Current value: ", i)
+# for i in range (1,11):
+#     print ("Current value: ", i)
 
-# 2. Try the above exercise using a while loop. You’ll need to define a counter and an appropriate stopping condition. And you’ll need to manually increment the counter after every loop.
-counter = 1
-while counter <= 10:
-    print ("Counter value: ", counter)
-    counter += 1
+# # 2. Try the above exercise using a while loop. You’ll need to define a counter and an appropriate stopping condition. And you’ll need to manually increment the counter after every loop.
+# counter = 1
+# while counter <= 10:
+#     print ("Counter value: ", counter)
+#     counter += 1
 
 # 3. Use nested loops to print the following output:
 
@@ -27,12 +27,22 @@ while counter <= 10:
 
 # After the inner loop finishes, the outer loop prints the string variable and then sets it to the empty string '', clear for reuse in the next iteration.
 
-line_to_print = 'love'
 
-for i in range(1, 10):
-    for j in range (0,9):
-        line_to_print += str(i)
+line_to_print = ''
+for i in range (1, 10):
+    for j in range (0, 9):
+        line_to_print += str(i) # the reason of converting to string is that integers can't be put in a row like that 
 
-for i in range (10):
-    for j in range (1, 11):
-        print ('*', end = "")
+    print(line_to_print)
+    line_to_print = '' # it resets every row 
+
+# 4.You are given a list of countries. For each country in the list, print the following sentence:
+
+# {country} contains {len(country)} letters!
+
+# Use the following list:
+
+countries = ['Thailand', 'Vietnam', 'Malaysia', 'UAE']
+
+for i in countries:
+    print (i,'contains', len(i), 'letters!')
