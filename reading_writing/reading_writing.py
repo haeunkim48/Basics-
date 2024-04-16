@@ -44,3 +44,5 @@ with open ("C: \\data \\funny.txt", 'r') as f:
 
 # how to check whether the file is open or closed 
 print (f.closed())
+
+#----------------------------------
