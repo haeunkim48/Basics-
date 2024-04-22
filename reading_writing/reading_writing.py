@@ -46,3 +46,4 @@ with open ("C: \\data \\funny.txt", 'r') as f:
 print (f.closed())
 
 #----------------------------------
+f = open ('test.txt','r')
